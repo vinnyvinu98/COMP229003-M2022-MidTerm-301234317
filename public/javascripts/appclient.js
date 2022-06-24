@@ -1,10 +1,12 @@
 // Filename: appclient.js
-// Student: Julio Vinicius
-// StudentId: 123456789
-// Date: Jun 02, 2022
+// Student: Vinny Mariam Vinu
+// StudentId: 301234317
+// Date: Jun 23, 2022
+// MidTerm: Used car store application 
 
 console.log('app script is working.');
 
+// confirm to delete the car from database
 if(getTitle == "Cars List")
 {
     let deleteButtons = document.querySelectorAll('.btn-danger');
@@ -20,6 +22,8 @@ if(getTitle == "Cars List")
     }
 }
 
+// user authentication- signup 
+//password check
 if(getTitle == "Sign-up Form")
 {
     const confirm = document.querySelector('input[name=password_confirm]');

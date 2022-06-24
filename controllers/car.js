@@ -51,7 +51,7 @@ module.exports.displayAddPage = (req, res, next) => {
 
     res.render('cars/add_edit', {
         title: 'Add a new Car',
-        item: newCar
+        car: newCar
     })        
 
 }
@@ -105,7 +105,7 @@ module.exports.displayEditPage = (req, res, next) => {
             //show the edit view
             res.render('cars/add_edit', {
                 title: 'Edit Car', 
-                item: carToEdit
+                car: carToEdit
             })
         }
     });
@@ -138,7 +138,7 @@ module.exports.processEditPage = (req, res, next) => {
         }
         else
         {
-            // console.log(req.body);
+             console.log(req.body);
             res.redirect('/cars/list');
         }
     });

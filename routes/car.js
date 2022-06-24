@@ -9,7 +9,7 @@ function requireAuth(req, res, next)
     // check if the user is logged in
     
     // ADD YOUR CODE HERE 
-     // check if the user is logged in
+
      if(!req.isAuthenticated())
      {
          req.session.url = req.originalUrl;
@@ -26,8 +26,8 @@ router.get('/list', carController.carList);
 router.get('/details/:id', carController.details);
 
 // Routers for edit
-router.get('/edit/:id',requireAuth, carController.displayEditPage);
-router.post('/edit/:id',requireAuth, carController.processEditPage);
+router.get('/edit/:id', requireAuth , carController.displayEditPage);
+router.post('/edit/:id', requireAuth , carController.processEditPage);
 
 // Delete
 router.get('/delete/:id', requireAuth, carController.performDelete);
